@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "description": "JavaScript DOM and Events Acting On Events Learn.co",
   "main": "index.js",
+  "watch": {
+    "test": "./*.js"
+  },
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
+    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json",
+    "watch": "npm-watch test"
   },
   "repository": {
     "type": "git",
